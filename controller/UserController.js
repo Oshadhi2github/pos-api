@@ -3,7 +3,7 @@ const register =(request,response)=>{
     const dto = new UserSchema({
         name:request.body.name,
         email:request.body.email,
-        password:request.body.password,
+        password:request.body.password
     });
     dto.save().then(result=>{
         let responseUserData={
